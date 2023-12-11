@@ -57,3 +57,27 @@ p:hover{
     opacity: 0.9; 
     cursor: pointer;
 }
+
+@media (max-width: 790px) {
+    .photo-gallery{
+        row-gap: 10px;
+        grid-template-columns: auto auto auto ;
+        margin: 5px;
+    }
+   }
+   @media (max-width: 730px) {
+    .photo-gallery{
+        row-gap: 10px;
+        grid-template-columns: auto auto ;
+        margin: 5px;
+    }
+   }
+   @media (max-width: 500px) {
+
+    .photo-gallery{
+        row-gap: 10px;
+        grid-template-columns: auto;
+        margin: 5px;
+    }
+    
+   }

@@ -29,3 +29,34 @@ button:hover {
     font-size: 19px;
     
 }
+@media (max-width: 710px) {
+
+    input{
+        width: 350px;
+    }
+    
+   }
+@media (max-width: 640px) {
+
+    input{
+        width: 300px;
+    }
+
+   }
+   @media (max-width: 515px) {
+
+    button{
+        width: 70px;
+    }
+    
+   }
+   @media (max-width: 465px) {
+
+    input{
+        width: 250px;
+    }
+    button{
+        width: 60px;
+    }
+    
+   }

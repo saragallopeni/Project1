@@ -29,3 +29,41 @@ i{
     margin: 15px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+@media (max-width: 790px) {
+    h1{
+        font-size: 70px;
+    }
+    i{
+        font-size: 59px;
+    }
+   }
+
+@media (max-width: 730px) {
+
+    h1{
+        font-size: 60px;
+    }
+    i{
+        font-size: 49px;
+    }
+   }
+   @media (max-width: 580px) {
+
+    h1{
+        font-size: 50px;
+    }
+    i{
+        font-size: 39px;
+    }
+   }
+   @media (max-width: 465px) {
+
+    h1{
+        font-size: 40px;
+    }
+    i{
+        font-size: 29px;
+    }
+    
+   }
