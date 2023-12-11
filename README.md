@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # FlickrApi
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.6.
@@ -29,3 +30,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 =======
 # Project-1
 >>>>>>> origin/main
+=======
+# Project1
+>>>>>>> a353c512660d1fd902c279864f0106486b2c5944
