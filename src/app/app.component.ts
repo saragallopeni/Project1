@@ -32,12 +32,36 @@ export class AppComponent {
     this.flickrService.searchPhotos(keyword, this.page).subscribe((data: any) => {
       console.log('Te dhenat', data);
       if (data && data.items) {
-        this.photos = this.photos.concat(data.items as Photo[]); 
+        const newPhotos: Photo[] = data.items.map((item: any) => {
+          const resolution = this.getResolution(item);
+          return {
+            title: item.title,
+            id: item.id,
+            media: item.media,
+            author: item.author,
+            published: item.published,
+            resolution: resolution,
+          } as Photo;
+        });
+  
+        this.photos = this.photos.concat(newPhotos);
         this.page++;
       }
     });
   }
+  
+  getResolution(photo: Photo): string {
+    if (photo.media && photo.media.m) {
+      const img = new Image();
+      img.src = photo.media.m;
 
+      const resolution = `${img.width}x${img.height}`;
+      return resolution;
+    } else {
+      return 'Jo e qasshme';
+    }
+  }
+  
  @HostListener('window:scroll')
 onScroll() {
   const scrollPosition = window.innerHeight + window.scrollY;
