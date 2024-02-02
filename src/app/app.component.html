@@ -5,6 +5,10 @@
   <div class="photo" *ngFor="let photo of photos">
     <img [src]="photo.media.m" alt="{{ photo.title }}">
     <div class="text">
-    <p>{{ photo.title }}</p>
+      <p>Titulli: {{ photo.title }}</p>
+      <p>ID: {{ photo.id }}</p>
+      <p>Autori: {{ photo.author.name }}</p> 
+      <p>Data: {{ photo.published }}</p>
     </div>
-  </div></div>
+  </div>
+</div>
